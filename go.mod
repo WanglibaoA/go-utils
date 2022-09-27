@@ -1,4 +1,4 @@
-module star-common
+module github.com/wallconner/star-common
 
 go 1.16
 
