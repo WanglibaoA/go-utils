@@ -1,4 +1,4 @@
-package utils
+package starUtils
 
 import (
 	"github.com/gin-gonic/gin"

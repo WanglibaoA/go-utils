@@ -1,4 +1,4 @@
-package utils
+package starUtils
 
 import (
 	"encoding/json"

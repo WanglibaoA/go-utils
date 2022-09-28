@@ -1,4 +1,4 @@
-package model
+package starModel
 
 const (
 	YearMonthDay             = "2006/01/02"
