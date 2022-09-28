@@ -1,12 +1,12 @@
-package utils
+package starUtils
 
 import (
 	"bytes"
 	"encoding/hex"
+	"github.com/wallconner/star-common/starModel"
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"star-common/model"
 	"strconv"
 	"strings"
 	"sync"
@@ -16,7 +16,7 @@ import (
 // Mkdir 根据日期创建文件夹
 func Mkdir(basePath string) string {
 	// 获取当前时间并格式化
-	folderName := time.Now().Format(model.YearMonthDay)
+	folderName := time.Now().Format(starModel.YearMonthDay)
 	folderPath := filepath.Join(basePath, folderName)
 
 	// 使用mkdirAll会创建多层级目录
@@ -26,7 +26,7 @@ func Mkdir(basePath string) string {
 
 //// StructToSlice 结构体转切片
 //func StructToSlice(entity interface{}) []string {
-//	quote := entity.(model.Quote)
+//	quote := entity.(starModel.Quote)
 //	v := reflect.ValueOf(quote)
 //	ss := make([]string, v.NumField())
 //	for i := range ss {
